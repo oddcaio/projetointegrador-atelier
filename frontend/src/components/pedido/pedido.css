@@ -44,16 +44,25 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background-color: #f2f2f2;
-    border: 1px solid #999;
+    background-color: #25D366;
+    border: 1px solid #25D366;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .pedidosContainer .adicionar:hover {
-    border: 1px solid #25D366;
+    background-color: #1DA851;
+    border: 1px solid #1DA851;
 }
 
 .pedidosContainer .adicionar:active {
-    border: 1px solid #128C7E;
+    background-color: #075E54;
+    border: 1px solid #075E54;
 }
 
 .pedidosContainer .excluir {
@@ -61,6 +70,7 @@
     color: #fff;
     border: none;
     padding: 6px 12px;
+    font-size: 14px;
     border-radius: 4px;
     cursor: pointer;
     flex-shrink: 0;
@@ -96,6 +106,7 @@
 @media (max-width: 1200px) {
     .pedidosContainer {
         max-width: 500px;
+        margin-bottom: 20px;
     }
 }
 
@@ -103,7 +114,13 @@
     .pedidosContainer {
         max-width: 280px;
     }
+
     .pedidos .pedido {
         display: block;
+    }
+
+    .pedidosContainer .excluir {
+        font-size: 10px;
+        padding: 4px 8px;
     }
 }

@@ -1,9 +1,9 @@
 import './header.css';
 import logo from '../../assets/logo.png';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Header() {
-    const navItems = ['INÍCIO', 'KANBAN', 'CONTATOS', 'PEDIDOS'];
+    const navItems = ['INÍCIO', 'KANBAN', 'CONTATOS'];
 
     return (
         <header className="header">
@@ -13,18 +13,18 @@ export default function Header() {
                 {navItems.map((item) => {
                     const path = item === 'INÍCIO' ? '/' : `/${item.toLowerCase()}`;
                     return (
-                        <Link
+                        <NavLink
                             key={item}
                             to={path}
-                            className={`nav-item ${item === 'INÍCIO' ? 'active' : ''}`}
+                            className={({ isActive }) =>
+                                `nav-item ${isActive ? 'active' : ''}`
+                            }
                         >
                             {item}
-                        </Link>
+                        </NavLink>
                     );
                 })}
             </nav>
         </header>
     );
-};
-
-
+}

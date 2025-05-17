@@ -1,0 +1,49 @@
+.kanbanCard {
+    background-color: #e7f5e1;
+    border-radius: 8px;
+    padding: 10px 14px;
+    border: 2px solid #25d366;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.15s ease, border-color 0.3s ease;
+    user-select: none;
+    margin-bottom: 20px;
+}
+
+.kanbanCard:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    transform: translateY(-2px);
+    border-color: #1da851;
+}
+
+.kanbanCard h4 {
+    margin: 0 0 8px 0;
+    font-weight: 700;
+    color: #333;
+    font-size: 1rem;
+}
+
+.kanbanCard p {
+    margin: 3px 0;
+    color: #555;
+    font-size: 0.85rem;
+}
+
+.kanbanCard select {
+    margin-top: 8px;
+    width: 100%;
+    padding: 5px 8px;
+    border-radius: 6px;
+    border: 1.5px solid #25d366;
+    background-color: white;
+    font-size: 0.95rem;
+    color: #000;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.kanbanCard select:hover,
+.kanbanCard select:focus {
+    border-color: #1da851;
+    outline: none;
+}

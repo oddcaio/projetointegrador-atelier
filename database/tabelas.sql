@@ -3,15 +3,12 @@ CREATE TABLE IF NOT EXISTS public.tb_lembretes (
     lembrete character varying(255) COLLATE pg_catalog."default" NOT NULL,
     CONSTRAINT lembretes_pkey PRIMARY KEY (id)
 )
-
-
 -------------------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS public.tb_status (
     id integer NOT NULL DEFAULT nextval('tb_status_id_seq' :: regclass),
     nome character varying(20) COLLATE pg_catalog."default" NOT NULL,
     CONSTRAINT tb_status_pkey PRIMARY KEY (id)
 )
-
 -------------------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS public.tb_pedidos
 (
@@ -27,4 +24,13 @@ CREATE TABLE IF NOT EXISTS public.tb_pedidos
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
         NOT VALID
+)
+-------------------------------------------------------------------------------------
+CREATE TABLE IF NOT EXISTS public.tb_contatos
+(
+    id integer NOT NULL DEFAULT nextval('tb_contatos_id_seq'::regclass),
+    nome character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    telefone character varying(15) COLLATE pg_catalog."default" NOT NULL,
+    tipo character varying(30) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT tb_contatos_pkey PRIMARY KEY (id)
 )

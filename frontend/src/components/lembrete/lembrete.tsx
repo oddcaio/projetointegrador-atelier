@@ -50,7 +50,7 @@ export default function Lembrete() {
             }
             <div className='titulo'>
                 <h2>Lembretes</h2>
-                <button onClick={() => setIsAddLembreteOpen(true)} className='adicionar'>Novo lembrete <FaCirclePlus size={20} color='#25D366' /></button>
+                <button onClick={() => setIsAddLembreteOpen(true)} className='adicionar'>Novo lembrete <FaCirclePlus size={20} color='#fff' /></button>
                 <span>Total de lembretes: {lembretes.length}</span>
             </div>
 

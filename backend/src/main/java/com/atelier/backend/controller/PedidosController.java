@@ -51,4 +51,14 @@ public class PedidosController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
+    @PutMapping("/{id}/status/{statusId}")
+    public ResponseEntity<PedidosModel> atualizarStatus(@PathVariable Integer id, @PathVariable Integer statusId) {
+        try {
+            PedidosModel pedidoAtualizado = pedidosService.atualizarStatusPedido(id, statusId);
+            return ResponseEntity.ok(pedidoAtualizado);
+        } catch (RuntimeException e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        }
+    }
 }

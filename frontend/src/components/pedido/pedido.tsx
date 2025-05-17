@@ -55,7 +55,7 @@ export default function Pedido() {
             }
             <div className='titulo'>
                 <h2>Pedidos</h2>
-                <button onClick={() => setIsAddPedidoOpen(true)} className='adicionar'>Novo pedido <FaCirclePlus size={20} color='#25D366' /></button>
+                <button onClick={() => setIsAddPedidoOpen(true)} className='adicionar'>Novo pedido <FaCirclePlus size={20} color='#fff' /></button>
                 <span>Total de pedidos: {pedidos.length}</span>
             </div>
             <div className="pedidos">

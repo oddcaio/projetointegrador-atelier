@@ -13,7 +13,6 @@ public class PedidosModel {
     private String descricao;
     private LocalDate recebido;
     private LocalDate prazo;
-    private LocalDate entregue;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "status")
     private StatusModel status;
@@ -50,14 +49,6 @@ public class PedidosModel {
         this.prazo = prazo;
     }
 
-    public LocalDate getEntregue() {
-        return entregue;
-    }
-
-    public void setEntregue(LocalDate entregue) {
-        this.entregue = entregue;
-    }
-
     public StatusModel getStatus() {
         return status;
     }
@@ -69,12 +60,11 @@ public class PedidosModel {
     public PedidosModel() {
     }
 
-    public PedidosModel(Integer id, String descricao, LocalDate recebido, LocalDate prazo, LocalDate entregue, StatusModel status) {
+    public PedidosModel(Integer id, String descricao, LocalDate recebido, LocalDate prazo, StatusModel status) {
         this.id = id;
         this.descricao = descricao;
         this.recebido = recebido;
         this.prazo = prazo;
-        this.entregue = entregue;
         this.status = status;
     }
 }

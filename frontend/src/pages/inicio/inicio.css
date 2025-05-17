@@ -1,5 +1,6 @@
 .containerInicio {
     display: flex;
+    height: calc(100% - 64px);
     justify-content: center;
     align-items: center;
     gap: 40px;

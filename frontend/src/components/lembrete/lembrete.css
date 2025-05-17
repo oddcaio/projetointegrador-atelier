@@ -28,7 +28,6 @@
     align-items: flex-start;
     border: 1px solid #999;
     border-radius: 5px;
-
     overflow-y: auto;
 }
 
@@ -47,26 +46,36 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background-color: #f2f2f2;
-    border: 1px solid #999;
+    background-color: #25D366;
+    border: 1px solid #25D366;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px;
+    transition: all 0.3s ease;
 }
 
 .lembretesContainer .adicionar:hover {
-    border: 1px solid #25D366;
+    background-color: #1DA851;
+    border: 1px solid #1DA851;
 }
 
 .lembretesContainer .adicionar:active {
-    border: 1px solid #128C7E;
+    background-color: #075E54;
+    border: 1px solid #075E54;
 }
 
 .lembretesContainer .excluir {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: #f2f2f2;
     background-color: red;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
     font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-shrink: 0;
 }
 
 .lembretesContainer .excluir:hover {
@@ -79,7 +88,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-right: 20px;
+    margin: 0 20px;
 }
 
 .lembretesContainer span {
@@ -88,6 +97,11 @@
     margin: 5px;
 }
 
+@media (max-width: 1200px) {
+    .lembretesContainer {
+        margin-top: 100px;
+    }
+}
 
 @media (max-width: 600px) {
     .lembretesContainer {
@@ -96,5 +110,10 @@
 
     .lembretes .lembrete {
         display: block;
+    }
+
+    .lembretesContainer .excluir {
+        font-size: 10px;
+        padding: 4px 8px;
     }
 }

@@ -69,5 +69,23 @@ class Service {
             throw error;
         }
     }
+    async listarContatos() {
+        try {
+            const response = await api.get(`/contatos/listar`)
+            return response.data;
+        } catch (error) {
+            console.error('Error: ', error);
+            throw error;
+        }
+    }
+    async atualizarStatusPedido(pedidoId: number, statusId: number) {
+        try {
+            const response = await api.put(`/pedidos/${pedidoId}/status/${statusId}`);
+            return response.data;
+        } catch (error) {
+            console.error('Erro ao atualizar status do pedido:', error);
+            throw error;
+        }
+    }
 }
 export const service = new Service();
