@@ -1,0 +1,12 @@
+.containerInicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+@media(max-width: 1200px) {
+    .containerInicio {
+        flex-direction: column;
+    }
+}
