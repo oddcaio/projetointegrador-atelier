@@ -1,0 +1,67 @@
+.addLembrete {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 320px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.addLembrete p {
+    color: #000;
+    font-size: 16px;
+}
+
+.addLembrete .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.addLembrete .cancel-button {
+    background-color: #ccc;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addLembrete .cancel-button:hover {
+    background-color: #8e8e8e;
+}
+
+.addLembrete .confirm-button {
+    background-color: #25D366;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addLembrete .confirm-button:hover {
+    background-color: #1DA851;
+}
+
+.addLembrete .confirm-button:disabled {
+    background-color: #999;
+}
+
+.addLembrete textarea {
+    width: 100%;
+    min-height: 80px;
+    resize: vertical;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.addLembrete textarea:focus {
+    outline: none;
+    border-color: #25d366;
+    box-shadow: 0 0 5px rgba(37, 211, 102, 0.5);
+}

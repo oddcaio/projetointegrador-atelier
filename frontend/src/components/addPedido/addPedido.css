@@ -1,0 +1,70 @@
+.addPedido {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 320px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.addPedido p {
+    color: #000;
+    font-size: 16px;
+}
+
+.addPedido .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.addPedido .cancel-button {
+    background-color: #ccc;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addPedido .cancel-button:hover {
+    background-color: #8e8e8e;
+}
+
+.addPedido .confirm-button {
+    background-color: #25D366;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addPedido .confirm-button:hover {
+    background-color: #1DA851;
+}
+
+.addPedido .confirm-button:disabled {
+    background-color: #999;
+}
+
+.addPedido textarea,
+.addPedido input,
+.addPedido select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.addPedido textarea:focus,
+.addPedido input:focus,
+.addPedido select:focus {
+    outline: none;
+    border-color: #25d366;
+    box-shadow: 0 0 5px rgba(37, 211, 102, 0.5);
+}
