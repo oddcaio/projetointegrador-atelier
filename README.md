@@ -10,7 +10,7 @@ Este documento descreve as tecnologias utilizadas e o passo a passo para executa
 - **Banco de Dados**: PostgreSQL com PgAdmin para gerenciamento  
 - **Frontend**: React + Vite  
 - **Gerenciamento de Dependências Frontend**: npm  
-
+- **Testes**: Vitest (para testes frontend)  
 ---
 
 ## Pré-requisitos
@@ -58,4 +58,8 @@ Este documento descreve as tecnologias utilizadas e o passo a passo para executa
 
 Obs: se alterar a porta no frontend, tem que alterar a url no backend em application.properties.
 
+6. Para visualizar os testes unitários, dentro da pasta frontend execute o comando: 
+   `npm run test`
+
+Se quiser testar um arquivo solitário, abra ele e execute o mesmo comando, ou, se já aberto, apenas salve o arquivo com ctrl+s que irá executar novamente.
 

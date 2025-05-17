@@ -7,7 +7,7 @@ export default function Header() {
 
     return (
         <header className="header">
-            <img src={logo} width={50} height={50} />
+            <img src={logo} width={50} height={50} alt="logo" />
             <div className="logo">Atelier Opção</div>
             <nav className="nav">
                 {navItems.map((item) => {

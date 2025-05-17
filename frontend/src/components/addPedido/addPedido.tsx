@@ -66,16 +66,18 @@ export default function AddPedido({ onClose, onAdd }: AddPedidoProps) {
                         autoFocus
                     />
                     <div className="input-container">
-                        <span className="input-label">Data de recebimento</span>
+                        <label htmlFor="recebido" className="input-label">Data de recebimento</label>
                         <input
+                            id="recebido"
                             type="date"
                             value={recebido ?? ''}
                             onChange={e => setRecebido(e.target.value || undefined)}
                         />
                     </div>
                     <div className="input-container">
-                        <span className="input-label">Prazo de entrega</span>
+                        <label htmlFor="prazo" className="input-label">Prazo de entrega</label>
                         <input
+                            id="prazo"
                             type="date"
                             value={prazo ?? ''}
                             onChange={e => setPrazo(e.target.value || undefined)}

@@ -4,9 +4,9 @@ import './inicio.css';
 
 export default function Inicio() {
     return (
-        <div className='containerInicio'>
+        <main className='containerInicio'>
             <Lembrete />
             <Pedido />
-        </div>
+        </main>
     )
 }

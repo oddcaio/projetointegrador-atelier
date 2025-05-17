@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { service } from '../../service/service';
 import { FaCirclePlus } from 'react-icons/fa6';
 import ConfirmModal from '../confirmacaoModal/confirmacaoModal';
-// import AddPedido from '../addPedido/addPedido';
 import './pedido.css';
 import { formatDate } from '../../utils/fomatDate';
 import AddPedido from '../addPedido/addPedido';
